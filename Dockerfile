@@ -4,7 +4,7 @@
 # ships a self-contained .NET build for linux-musl-x64; the image adds only the
 # native libraries that runtime loads. VERSION is the upstream release tag.
 FROM ghcr.io/rake-pro/alpine-base:1.0@sha256:73a14e80b779043678834af2c47d6c1c17dc1982733d596fba38bafd1093e5b5 AS fetch
-ARG VERSION="v0.24.3055"
+ARG VERSION="v0.24.3065"
 RUN apk add --no-cache curl \
     && mkdir -p /out/bin \
     && curl -fsSL -o /tmp/app.tgz \
